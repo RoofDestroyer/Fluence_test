@@ -82,7 +82,12 @@ export const Text = styled.span`
 
 export const ButtonStart = styled.div`
   display: ${(props) => (props.hidden ? "none" : "block")};
-  background: var(--Social, #0d1531);
+
+  background-color: ${(props) =>
+    props.hasTextButton ? "#2D68FF" : "var(--Social, #0d1531)"};
+
+  color: ${(props) => (props.hasTextButton ? "#FFFFFF" : "#2d68ff")};
+
   width: 80px;
   height: 42px;
   border-radius: 10px;
@@ -95,8 +100,6 @@ export const ButtonStart = styled.div`
   line-height: 100%;
   letter-spacing: 2%;
   text-transform: uppercase;
-
-  color: #2d68ff;
 `;
 
 export const CompletedBlock = styled.div`

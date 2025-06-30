@@ -46,8 +46,6 @@ function App() {
     <CurrencyProvider>
       <Nav isVisible={!isScrolled}></Nav>
       <AfterScrollNav isVisible={isScrolled} />
-      {/* {isScrolled ? <AfterScrollNav /> : <Nav />} */}
-
       <FirstBlock />
       <SecondBlock />
       <SecondBlock />
@@ -55,13 +53,14 @@ function App() {
         <Title>activities</Title>
         <WrapperActivities></WrapperActivities>
         <WrapperActivities>
-          <Card text={"subscribe to Fluence"} points={100} />
+          <Card text={"subscribe to Fluence"} points={100} textButton={'Verify'} />
           <Card text={"subscribe to DePIN"} points={100} />
         </WrapperActivities>
         <WrapperActivities>
           <Card text={"be publish on CMC"} points={20} />
           <Card text={"like &bookmark our latest tweet"} points={100} />
         </WrapperActivities>
+        <SecondBlock />
       </ThirtyBlock>
     </CurrencyProvider>
   );

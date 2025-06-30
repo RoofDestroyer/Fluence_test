@@ -27,7 +27,7 @@ import CurrencyContext from "../../CurrencyContext";
 import BIG_LOGO from "../../assets/Frame 1948758739.svg";
 import GIF_NOTIGICATION from "../../assets/giphy (5).gif";
 
-const Card = ({ text, points }) => {
+const Card = ({ text, points, textButton }) => {
   const [isRunning, setIsRunning] = useState(false);
   const [isCompleted, setIsCompleted] = useState(false);
   const { addCurrency } = useContext(CurrencyContext);
@@ -72,8 +72,12 @@ const Card = ({ text, points }) => {
       )}
 
       {!isRunning && !isCompleted && (
-        <ButtonStart onClick={handleStart} hidden={isCompleted}>
-          Start
+        <ButtonStart
+          onClick={handleStart}
+          hidden={isCompleted}
+          hasTextButton={!!textButton}
+        >
+          {textButton || "Start"}
         </ButtonStart>
       )}
 
