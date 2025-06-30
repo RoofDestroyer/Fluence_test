@@ -26,6 +26,7 @@ import VECTOR from "../../assets/Vector 6776.svg";
 import CurrencyContext from "../../CurrencyContext";
 import BIG_LOGO from "../../assets/Frame 1948758739.svg";
 import GIF_NOTIGICATION from "../../assets/giphy (5).gif";
+import IMG_BACKGROUND from "../../assets/Virtual machines CPU_0000 1.svg";
 
 const Card = ({ text, points, textButton }) => {
   const [isRunning, setIsRunning] = useState(false);
@@ -35,8 +36,12 @@ const Card = ({ text, points, textButton }) => {
   const [visibleNotification, setVisibleNotification] = useState(false);
 
   useEffect(() => {
-    const img = new window.Image();
-    img.src = GIF_NOTIGICATION;
+    const imgGif = new window.Image();
+    imgGif.src = GIF_NOTIGICATION;
+    const imgBg = new window.Image();
+    imgBg.src = IMG_BACKGROUND;
+    const imgBgLogo = new window.Image();
+    imgBgLogo.src = BIG_LOGO;
   }, []);
 
   const handleStart = () => {
