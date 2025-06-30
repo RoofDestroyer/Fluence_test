@@ -34,6 +34,11 @@ const Card = ({ text, points, textButton }) => {
   const [showNotification, setShowNotification] = useState(false);
   const [visibleNotification, setVisibleNotification] = useState(false);
 
+  useEffect(() => {
+    const img = new window.Image();
+    img.src = GIF_NOTIGICATION;
+  }, []);
+
   const handleStart = () => {
     setIsRunning(true);
 
