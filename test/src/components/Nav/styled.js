@@ -61,6 +61,7 @@ export const WrapperTag = styled.div`
 `;
 
 export const Tag = styled.div`
+  box-sizing: border-box;
   width: 40px;
   height: 18px;
   gap: 10px;
