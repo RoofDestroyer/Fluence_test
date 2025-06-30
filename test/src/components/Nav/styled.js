@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  position: fixed;
   width: 1440px;
-  height: 50px;
+  height: 70px;
   display: flex;
   justify-content: center;
   background: transparent;
