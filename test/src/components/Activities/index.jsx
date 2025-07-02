@@ -25,7 +25,7 @@ import testImg from "../../assets/timer.json";
 import VECTOR from "../../assets/Vector 6776.svg";
 import CurrencyContext from "../../CurrencyContext";
 import BIG_LOGO from "../../assets/Frame_1948758739.svg";
-import GIF_NOTIGICATION from "../../assets/giphy (5).gif";
+import GIF_NOTIGICATION from "../../assets/giphy5-ezgif.com-cut.gif";
 import IMG_BACKGROUND from "../../assets/Virtual machines CPU_0000 1.svg";
 
 const Card = ({ text, points, textButton }) => {
@@ -66,7 +66,7 @@ const Card = ({ text, points, textButton }) => {
 
   useEffect(() => {
     if (showNotification) {
-      setTimeout(() => setVisibleNotification(true), 50);
+      setTimeout(() => setVisibleNotification(true), 300);
       const hideTimeout = setTimeout(() => {
         setVisibleNotification(false);
         setTimeout(() => setShowNotification(false), 1000);
