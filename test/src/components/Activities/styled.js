@@ -257,6 +257,8 @@ export const Notification = styled.div`
 export const ImgNotificationBackground = styled.div`
   opacity: ${(props) => (props.visibleNotification ? 0 : 1)};
   transition: opacity 1s ease-out;
+  pointer-events: ${(props) => (props.visibleNotification ? "none" : "auto")};
+
   position: fixed;
   right: 20px;
   bottom: 20px;
