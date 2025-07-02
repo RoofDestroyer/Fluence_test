@@ -17,6 +17,7 @@ import {
   Title,
   TitleMedia,
   Vector,
+  WrapperButton,
   WrapperCompledetInfo,
   WrapperInfoTextLogo,
   WrapperLottie,
@@ -107,30 +108,32 @@ const Card = ({ text, points, textButton }) => {
           </CompletedBlock>
         )}
       </WrapperTextMedia>
-      {isRunning && (
-        <WrapperLottie>
-          <LottieContainer isRunning={isRunning}>
-            <Lottie animationData={testImg} loop={true} />
-          </LottieContainer>
-        </WrapperLottie>
-      )}
+      <WrapperButton>
+        {isRunning && (
+          <WrapperLottie>
+            <LottieContainer isRunning={isRunning}>
+              <Lottie animationData={testImg} loop={true} />
+            </LottieContainer>
+          </WrapperLottie>
+        )}
 
-      {!isRunning && !isCompleted && (
-        <ButtonStart
-          onClick={handleStart}
-          hidden={isCompleted}
-          hasTextButton={!!textButton}
-        >
-          {textButton || "Start"}
-        </ButtonStart>
-      )}
+        {!isRunning && !isCompleted && (
+          <ButtonStart
+            onClick={handleStart}
+            hidden={isCompleted}
+            hasTextButton={!!textButton}
+          >
+            {textButton || "Start"}
+          </ButtonStart>
+        )}
 
-      {isCompleted && (
-        <CompletedBlock>
-          <Vector src={VECTOR} />
-          <CompletedText>Completed</CompletedText>
-        </CompletedBlock>
-      )}
+        {isCompleted && (
+          <CompletedBlock>
+            <Vector src={VECTOR} />
+            <CompletedText>Completed</CompletedText>
+          </CompletedBlock>
+        )}
+      </WrapperButton>
 
       {/* {showNotification && ( */}
       <ImgNotificationBackground visibleNotification={!visibleNotification}>

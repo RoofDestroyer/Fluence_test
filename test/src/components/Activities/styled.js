@@ -111,6 +111,12 @@ export const WrapperTextMedia = styled.div`
   }
 `;
 
+export const WrapperButton = styled.div`
+  @media (max-width: 1000px) {
+    display: none;
+  }
+`;
+
 export const Title = styled.span`
   font-family: Unbounded;
   font-weight: 400;
@@ -119,7 +125,7 @@ export const Title = styled.span`
   letter-spacing: 0%;
   color: #ffffff;
   @media (max-width: 1000px) {
-  display: none;
+    display: none;
   }
 `;
 
