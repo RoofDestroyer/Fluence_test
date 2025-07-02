@@ -12,13 +12,16 @@ import {
   Notification,
   RightWrapperNotification,
   Text,
+  TextMedua,
   TextNotification,
   Title,
+  TitleMedia,
   Vector,
   WrapperCompledetInfo,
   WrapperInfoTextLogo,
   WrapperLottie,
   WrapperText,
+  WrapperTextMedia,
 } from "./styled";
 import Lottie from "lottie-react";
 import testImg from "../../assets/timer.json";
@@ -75,31 +78,35 @@ const Card = ({ text, points, textButton }) => {
         <Title>{text}</Title>
         <Text>{points} points</Text>
       </WrapperText>
+      <TitleMedia>{text}</TitleMedia>
+      <WrapperTextMedia>
+        <TextMedua>{points} points</TextMedua>
 
-      {isRunning && (
-        <WrapperLottie>
-          <LottieContainer isRunning={isRunning}>
-            <Lottie animationData={testImg} loop={true} />
-          </LottieContainer>
-        </WrapperLottie>
-      )}
+        {isRunning && (
+          <WrapperLottie>
+            <LottieContainer isRunning={isRunning}>
+              <Lottie animationData={testImg} loop={true} />
+            </LottieContainer>
+          </WrapperLottie>
+        )}
 
-      {!isRunning && !isCompleted && (
-        <ButtonStart
-          onClick={handleStart}
-          hidden={isCompleted}
-          hasTextButton={!!textButton}
-        >
-          {textButton || "Start"}
-        </ButtonStart>
-      )}
+        {!isRunning && !isCompleted && (
+          <ButtonStart
+            onClick={handleStart}
+            hidden={isCompleted}
+            hasTextButton={!!textButton}
+          >
+            {textButton || "Start"}
+          </ButtonStart>
+        )}
 
-      {isCompleted && (
-        <CompletedBlock>
-          <Vector src={VECTOR} />
-          <CompletedText>Completed</CompletedText>
-        </CompletedBlock>
-      )}
+        {isCompleted && (
+          <CompletedBlock>
+            <Vector src={VECTOR} />
+            <CompletedText>Completed</CompletedText>
+          </CompletedBlock>
+        )}
+      </WrapperTextMedia>
 
       {/* {showNotification && ( */}
       <ImgNotificationBackground visibleNotification={!visibleNotification}>

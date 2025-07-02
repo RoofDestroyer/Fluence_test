@@ -32,7 +32,8 @@ export const Container = styled.div`
     width: 315px;
     height: 74px;
     padding: 15px;
-    align-items: flex-end;
+    /* align-items: flex-end; */
+    flex-direction: column;
     /* padding-bottom: 7px; */
   }
 `;
@@ -71,8 +72,8 @@ export const WrapperLottie = styled.div`
     height: 30px;
     border-radius: 10px;
     padding: 10px;
-    position: relative;
-    top: 10px;
+    /* position: relative;
+    top: 10px; */
 
     font-family: Unbounded;
     font-weight: 500;
@@ -92,6 +93,21 @@ export const WrapperText = styled.div`
   gap: 6px;
   @media (max-width: 1000px) {
     width: 200px;
+    display: none;
+  }
+`;
+
+export const WrapperTextMedia = styled.div`
+  display: none;
+  @media (max-width: 1000px) {
+    /* display: block; */
+    width: 285px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
   }
 `;
 
@@ -103,6 +119,15 @@ export const Title = styled.span`
   letter-spacing: 0%;
   color: #ffffff;
   @media (max-width: 1000px) {
+  display: none;
+  }
+`;
+
+export const TitleMedia = styled.span`
+  display: none;
+  @media (max-width: 1000px) {
+    display: block;
+    color: #ffffff;
     font-family: Unbounded;
     font-weight: 400;
     font-size: 14px;
@@ -122,11 +147,21 @@ export const Text = styled.span`
   opacity: 0.6;
 
   @media (max-width: 1000px) {
+    display: none;
+  }
+`;
+
+export const TextMedua = styled.span`
+  display: none;
+  @media (max-width: 1000px) {
+    color: #ffffff;
+    display: block;
     font-family: Unbounded;
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
     letter-spacing: 0%;
+    opacity: 0.6;
   }
 `;
 
@@ -173,8 +208,8 @@ export const ButtonStart = styled.button`
     height: 30px;
     border-radius: 10px;
     padding: 10px;
-    position: relative;
-    top: 10px;
+    /* position: relative;
+    top: 10px; */
 
     font-family: Unbounded;
     font-weight: 500;
@@ -210,10 +245,10 @@ export const CompletedBlock = styled.div`
     width: 114px;
     height: 30px;
     gap: 5px;
-    padding: 10px;
-    position: relative;
-    right: 30px;
-    top: 8px;
+    /* padding: 10px;
+    position: relative; */
+    /* right: 30px;
+    top: 8px; */
   }
 `;
 

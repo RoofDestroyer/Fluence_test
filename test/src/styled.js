@@ -63,7 +63,7 @@ export const SmallTitle = styled.span`
   color: #ffffff;
   margin-top: 10px;
   @media (max-width: 1000px) {
-    width: 100%; // Устанавливаем ширину в 100% от родительского элемента
+    width: 250px; // Устанавливаем ширину в 100% от родительского элемента
     height: auto; // При необходимости, высота может быть изменена
     font-family: Unbounded;
     font-weight: 400;
@@ -328,6 +328,17 @@ export const ThirtyBlock = styled.div`
   }
 `;
 
+export const WrapperTitleActivities = styled.div`
+  box-sizing: border-box;
+  width: 1000px;
+  height: 186px;
+
+  @media (max-width: 1000px) {
+    width: 345px;
+    height: auto;
+  }
+`;
+
 export const Title = styled.span`
   font-family: Unbounded;
   font-weight: 600;
@@ -448,7 +459,8 @@ export const TextBigCardActivities = styled.span`
   font-size: 14px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: grey;
+  color: #ffffff;
+  opacity: 0.6;
 `;
 
 export const SoonBigCardActivities = styled.div`

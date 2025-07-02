@@ -45,6 +45,7 @@ import {
   WrapperTextActiveBoostsInfo,
   WrapperTextBigCardActivities,
   WrapperTextFooter,
+  WrapperTitleActivities,
   WrappertTextInfoLogo,
 } from "./styled";
 import Card from "./components/Activities";
@@ -187,7 +188,9 @@ function App() {
         </SecondBlock>
 
         <ThirtyBlock>
-          <Title>activities</Title>
+          <WrapperTitleActivities>
+            <Title>activities</Title>
+          </WrapperTitleActivities>
           <WrapperActivities>
             <WrapperLogoTextActivities>
               <LogoActivities src={LOGO_THIRTY_BLOCK_1} loading="lazy" />
