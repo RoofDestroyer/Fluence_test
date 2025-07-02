@@ -2,16 +2,20 @@ import LOGO from "../../assets/Frame 1948758738.svg";
 import {
   Container,
   Logo,
+  MenuLogo,
   RightWrapper,
   Text,
   TextCount,
+  TextMedua,
   Wallet,
   Wrapper,
+  WrapperWalletMenu,
 } from "./styled";
 import { useContext, useEffect, useState } from "react";
 import CurrencyContext from "../../CurrencyContext";
 import Lottie from "lottie-react";
 import testImg from "../../assets/plus points.json";
+import MENU_LOGO from "../../assets/Menu.svg";
 
 export const AfterScrollNav = ({ isVisible }) => {
   const { currency } = useContext(CurrencyContext);
@@ -66,8 +70,14 @@ export const AfterScrollNav = ({ isVisible }) => {
           <Text>
             Total Points: <TextCount>{displayedCurrency}</TextCount>
           </Text>
+          <TextMedua>
+            Total Points <TextCount>{displayedCurrency}</TextCount>
+          </TextMedua>
         </RightWrapper>
-        <Wallet>0xbc...6837</Wallet>
+        <WrapperWalletMenu>
+          <Wallet>0xbc...6837</Wallet>
+          <MenuLogo src={MENU_LOGO} />
+        </WrapperWalletMenu>
       </Wrapper>
     </Container>
   );

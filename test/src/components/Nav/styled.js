@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  box-sizing: border-box;
   position: fixed;
   width: 1440px;
   height: 70px;
@@ -12,14 +13,43 @@ export const Container = styled.div`
   opacity: ${(props) => (props.visible ? 1 : 0)};
   transform: ${(props) =>
     props.visible ? "translateY(0)" : "translateY(-100%)"};
+
+  @media (max-width: 1000px) {
+    width: 100vw; // Устанавливаем ширину в 100% от родительского элемента
+    height: auto; // При необходимости, высота может быть изменена
+  }
+`;
+
+export const MenuLogo = styled.img`
+  display: none;
+  @media (max-width: 1000px) {
+    display: block;
+  }
+`;
+
+export const WrapperWalletMenu = styled.div`
+  display: none;
+  @media (max-width: 1000px) {
+    display: flex;
+
+    gap: 10px;
+  }
 `;
 
 export const Wrapper = styled.div`
+  box-sizing: border-box;
   width: 1000px;
   height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 1000px) {
+    width: 100%; // Устанавливаем ширину в 100% от родительского элемента
+    height: auto; // При необходимости, высота может быть изменена
+    height: 42px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 `;
 
 export const Logo = styled.img``;
@@ -30,6 +60,10 @@ export const WrapperText = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 export const Text = styled.span`
@@ -82,15 +116,6 @@ export const Tag = styled.div`
   color: #f3a953;
 `;
 
-export const Soon = styled.span`
-  width: 40;
-  height: 18;
-  gap: 10px;
-  border-radius: 999px;
-  padding: 5px;
-  color: #f3a953;
-`;
-
 export const Wallet = styled.div`
   box-sizing: border-box;
   width: 133px;
@@ -112,4 +137,7 @@ export const Wallet = styled.div`
   letter-spacing: 2%;
   text-transform: uppercase;
   color: #2d68ff;
+  @media (max-width: 1000px) {
+    width: 115px;
+  }
 `;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   position: fixed;
   top: 0;
-
+  z-index: 100;
   width: 100%;
   height: 66px;
   display: flex;
@@ -15,6 +15,10 @@ export const Container = styled.div`
   opacity: ${(props) => (props.visible ? 1 : 0)};
   transform: ${(props) =>
     props.visible ? "translateY(0)" : "translateY(-100%)"};
+  @media (max-width: 1000px) {
+    width: 100vw; // Устанавливаем ширину в 100% от родительского элемента
+    height: 70px; // При необходимости, высота может быть изменена
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -23,6 +27,13 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 1000px) {
+    width: 100%; // Устанавливаем ширину в 100% от родительского элемента
+    height: auto; // При необходимости, высота может быть изменена
+    height: 42px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 `;
 
 export const Logo = styled.img`
@@ -51,6 +62,9 @@ export const Logo = styled.img`
       transform: scale(1.2);
     }
   }
+  @media (max-width: 1000px) {
+    width: 32px;
+  }
 `;
 
 export const RightWrapper = styled.div`
@@ -71,6 +85,27 @@ export const Text = styled.span`
   vertical-align: middle;
   text-transform: uppercase;
   color: #636a95;
+  @media (max-width: 1000px) {
+    display: none;
+  }
+`;
+
+export const TextMedua = styled.span`
+  display: none;
+  @media (max-width: 1000px) {
+    display: flex;
+    color: #636a95;
+    font-family: Unbounded;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    flex-direction: column-reverse;
+    gap: 5px;
+  }
 `;
 
 export const TextCount = styled.span`
@@ -82,6 +117,14 @@ export const TextCount = styled.span`
   vertical-align: middle;
   text-transform: uppercase;
   color: #ffffff;
+  @media (max-width: 1000px) {
+    font-family: Unbounded;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    vertical-align: middle;
+  }
 `;
 
 export const Wallet = styled.div`
@@ -105,4 +148,23 @@ export const Wallet = styled.div`
   letter-spacing: 2%;
   text-transform: uppercase;
   color: #2d68ff;
+  @media (max-width: 1000px) {
+    width: 115px;
+  }
+`;
+
+export const MenuLogo = styled.img`
+  display: none;
+  @media (max-width: 1000px) {
+    display: block;
+  }
+`;
+
+export const WrapperWalletMenu = styled.div`
+  display: none;
+  @media (max-width: 1000px) {
+    display: flex;
+
+    gap: 10px;
+  }
 `;
