@@ -278,7 +278,7 @@ export const ImgNotificationBackground = styled.div`
 export const LeftWrappetNotification = styled.div`
   position: relative;
   bottom: 35px;
-  right: 10px;
+  right: 5px;
   width: 120px;
   height: 180px;
   overflow: hidden;
@@ -347,6 +347,10 @@ export const WrapperInfoTextLogo = styled.div`
   display: flex;
   gap: 9px;
   align-items: center;
+  @media (max-width: 1000px) {
+    width: 176px;
+    height: 44px;
+  }
 `;
 
 export const LogoNotification = styled.img``;
@@ -361,6 +365,7 @@ export const TextNotification = styled.span`
   letter-spacing: 0%;
   color: #ffffff;
   @media (max-width: 1000px) {
+    width: 111px;
     font-family: Unbounded;
     font-weight: 400;
     font-size: 16px;

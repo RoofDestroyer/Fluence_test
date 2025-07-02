@@ -35,13 +35,22 @@ const Card = ({ text, points, textButton }) => {
   const [showNotification, setShowNotification] = useState(false);
   const [visibleNotification, setVisibleNotification] = useState(false);
 
+  // useEffect(() => {
+  //   const imgGif = new window.Image();
+  //   imgGif.src = GIF_NOTIGICATION;
+  //   const imgBg = new window.Image();
+  //   imgBg.src = IMG_BACKGROUND;
+  //   const imgBgLogo = new window.Image();
+  //   imgBgLogo.src = BIG_LOGO;
+  // }, []);
+
   useEffect(() => {
-    const imgGif = new window.Image();
-    imgGif.src = GIF_NOTIGICATION;
-    const imgBg = new window.Image();
-    imgBg.src = IMG_BACKGROUND;
-    const imgBgLogo = new window.Image();
-    imgBgLogo.src = BIG_LOGO;
+    const preloadImages = [GIF_NOTIGICATION, IMG_BACKGROUND, BIG_LOGO];
+
+    preloadImages.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
   }, []);
 
   const handleStart = () => {

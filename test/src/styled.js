@@ -603,7 +603,7 @@ export const Footer = styled.div`
   margin-bottom: 36px;
   margin-top: 50px;
   @media (max-width: 1000px) {
-    width: 375px;
+    width: 360px;
     height: 144px;
     justify-content: space-between;
     align-items: flex-end;
