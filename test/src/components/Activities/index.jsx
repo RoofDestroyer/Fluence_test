@@ -107,6 +107,30 @@ const Card = ({ text, points, textButton }) => {
           </CompletedBlock>
         )}
       </WrapperTextMedia>
+      {isRunning && (
+        <WrapperLottie>
+          <LottieContainer isRunning={isRunning}>
+            <Lottie animationData={testImg} loop={true} />
+          </LottieContainer>
+        </WrapperLottie>
+      )}
+
+      {!isRunning && !isCompleted && (
+        <ButtonStart
+          onClick={handleStart}
+          hidden={isCompleted}
+          hasTextButton={!!textButton}
+        >
+          {textButton || "Start"}
+        </ButtonStart>
+      )}
+
+      {isCompleted && (
+        <CompletedBlock>
+          <Vector src={VECTOR} />
+          <CompletedText>Completed</CompletedText>
+        </CompletedBlock>
+      )}
 
       {/* {showNotification && ( */}
       <ImgNotificationBackground visibleNotification={!visibleNotification}>
