@@ -628,7 +628,7 @@ export const WrapperTextFooter = styled.div`
   @media (max-width: 1000px) {
     position: absolute;
     top: 50px;
-    left: calc(375px - 50% - 122px);
+    left: calc(360px - 50% - 122px);
   }
 `;
 
