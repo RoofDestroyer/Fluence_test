@@ -36,12 +36,15 @@ const Card = ({ text, points, textButton }) => {
   const [visibleNotification, setVisibleNotification] = useState(false);
 
   useEffect(() => {
-    const preloadImages = [GIF_NOTIGICATION, IMG_BACKGROUND, BIG_LOGO];
+    const preloadImages = () => {
+      const images = [BIG_LOGO, GIF_NOTIGICATION, IMG_BACKGROUND];
+      images.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+      });
+    };
 
-    preloadImages.forEach((src) => {
-      const img = new Image();
-      img.src = src;
-    });
+    preloadImages();
   }, []);
 
   const handleStart = () => {
@@ -57,7 +60,7 @@ const Card = ({ text, points, textButton }) => {
 
   useEffect(() => {
     if (showNotification) {
-      setTimeout(() => setVisibleNotification(true), 300);
+      setTimeout(() => setVisibleNotification(true), 100);
       const hideTimeout = setTimeout(() => {
         setVisibleNotification(false);
         setTimeout(() => setShowNotification(false), 1000);

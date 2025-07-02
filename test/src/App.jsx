@@ -57,17 +57,12 @@ import LOGO_SECOND_BLOCK_2 from "./assets/secondBlock/b73WUiEq_400x400 1-2.svg";
 import LOGO_SECOND_BLOCK_3 from "./assets/secondBlock/b73WUiEq_400x400 1-3.svg";
 
 import LOGO_THIRTY_BLOCK_1 from "./assets/thirtyBlock/Frame 1948758738-2.svg";
-import LOGO_THIRTY_BLOCK_2 from "./assets/thirtyBlock/Group 1948757817.svg";
-import LOGO_THIRTY_BLOCK_3 from "./assets/thirtyBlock/Icon_20.svg";
-import LOGO_THIRTY_BLOCK_33 from "./assets/thirtyBlock/Group 1948757829.svg";
-import LOGO_THIRTY_BLOCK_4 from "./assets/thirtyBlock/Icon_20-2.svg";
+
 import INFO_THIRTY_BLOCK_1 from "./assets/thirtyBlock/info.svg";
 import VECTOR_THIRTY_BLOCK_1 from "./assets/thirtyBlock/Vector 6926.svg";
 import FOOTER_LOGO from "./assets/footer/logo-2.svg";
 import MAIN_LOGO from "./assets//main/image 1015.svg";
-import BIG_LOGO from "./assets/Frame_1948758739.svg";
-import GIF_NOTIGICATION from "./assets/giphy (5).gif";
-import IMG_BACKGROUND from "./assets/Virtual_machines_CPU_0000_1.svg";
+
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
   const activitiesRef = useRef(null);
@@ -80,29 +75,23 @@ function App() {
     };
   }, []);
 
-  // useEffect(() => {
-  //   const preloadImages = [GIF_NOTIGICATION, IMG_BACKGROUND, BIG_LOGO];
-
-  //   preloadImages.forEach((src) => {
-  //     const img = new Image();
-  //     img.src = src;
-  //   });
-  // }, []);
-
-  // useEffect(() => {
-  //   const img1 = new window.Image();
-  //   img1.src = LOGO_SECOND_BLOCK_1;
-  //   const img2 = new window.Image();
-  //   img2.src = LOGO_SECOND_BLOCK_2;
-  //   const img3 = new window.Image();
-  //   img3.src = LOGO_SECOND_BLOCK_3;
-  //   const img4 = new window.Image();
-  //   img4.src = LOGO_THIRTY_BLOCK_1;
-  //   const img5 = new window.Image();
-  //   img5.src = INFO_THIRTY_BLOCK_1;
-  //   const img6 = new window.Image();
-  //   img6.src = MAIN_LOGO;
-  // }, []);
+  useEffect(() => {
+    const preloadImages = () => {
+      const images = [
+        MAIN_LOGO,
+        LOGO_SECOND_BLOCK_1,
+        LOGO_SECOND_BLOCK_2,
+        LOGO_SECOND_BLOCK_3,
+        LOGO_THIRTY_BLOCK_1,
+        INFO_THIRTY_BLOCK_1,
+      ];
+      images.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+      });
+    };
+    preloadImages();
+  }, []);
 
   const handleScroll = () => {
     if (activitiesRef.current) {
@@ -125,7 +114,7 @@ function App() {
       <MainBlock>
         <Nav isVisible={!isScrolled}></Nav>
         <AfterScrollNav isVisible={isScrolled} />
-        <MainLogo src={MAIN_LOGO} loading='lazy' />
+        <MainLogo src={MAIN_LOGO} loading="lazy" />
         <FirstBlock>
           <BigTitle>contribute</BigTitle>
           <BigTitle>collect points. repeat.</BigTitle>
@@ -155,7 +144,10 @@ function App() {
             <TitleSecondBlock>your active boosts</TitleSecondBlock>
             <ActiveBoostsBlock>
               <WrapperActiveBoostsInfo>
-                <LogoActiveBosstsInfo src={LOGO_SECOND_BLOCK_1} loading='lazy' />
+                <LogoActiveBosstsInfo
+                  src={LOGO_SECOND_BLOCK_1}
+                  loading="lazy"
+                />
                 <WrapperTextActiveBoostsInfo>
                   <TitleActiveBoostsInfo>real gecko</TitleActiveBoostsInfo>
                   <TextActiveBoostsInfo>
@@ -165,7 +157,10 @@ function App() {
                 <NumberActiveBoostsInfo>+20%</NumberActiveBoostsInfo>
               </WrapperActiveBoostsInfo>
               <WrapperActiveBoostsInfo>
-                <LogoActiveBosstsInfo src={LOGO_SECOND_BLOCK_2} loading='lazy'/>
+                <LogoActiveBosstsInfo
+                  src={LOGO_SECOND_BLOCK_2}
+                  loading="lazy"
+                />
                 <WrapperTextActiveBoostsInfo>
                   <TitleActiveBoostsInfo>uniswap</TitleActiveBoostsInfo>
                   <TextActiveBoostsInfo>
@@ -175,7 +170,10 @@ function App() {
                 <NumberActiveBoostsInfo>+35%</NumberActiveBoostsInfo>
               </WrapperActiveBoostsInfo>
               <WrapperActiveBoostsInfo>
-                <LogoActiveBosstsInfo src={LOGO_SECOND_BLOCK_3} loading='lazy' />
+                <LogoActiveBosstsInfo
+                  src={LOGO_SECOND_BLOCK_3}
+                  loading="lazy"
+                />
                 <WrapperTextActiveBoostsInfo>
                   <TitleActiveBoostsInfo>mexc</TitleActiveBoostsInfo>
                   <TextActiveBoostsInfo>
@@ -192,7 +190,7 @@ function App() {
           <Title>activities</Title>
           <WrapperActivities>
             <WrapperLogoTextActivities>
-              <LogoActivities src={LOGO_THIRTY_BLOCK_1} loading='lazy' />
+              <LogoActivities src={LOGO_THIRTY_BLOCK_1} loading="lazy" />
               <TitleLogoActivities>pointless</TitleLogoActivities>
             </WrapperLogoTextActivities>
             <BigCardActivities>
@@ -209,7 +207,7 @@ function App() {
 
           <WrapperActivities>
             <WrapperLogoTextActivities>
-              <LogoActivities src={LOGO_THIRTY_BLOCK_1} loading='lazy' />
+              <LogoActivities src={LOGO_THIRTY_BLOCK_1} loading="lazy" />
               <TitleLogoActivities>one-time</TitleLogoActivities>
             </WrapperLogoTextActivities>
             <WrapperActivitiesCard>
@@ -223,7 +221,7 @@ function App() {
           </WrapperActivities>
           <WrapperActivities>
             <WrapperLogoTextActivities ref={activitiesRef}>
-              <LogoActivities src={LOGO_THIRTY_BLOCK_1} loading='lazy' />
+              <LogoActivities src={LOGO_THIRTY_BLOCK_1} loading="lazy" />
               <TitleLogoActivities>daily</TitleLogoActivities>
             </WrapperLogoTextActivities>
             <WrapperActivitiesCard>
@@ -234,7 +232,7 @@ function App() {
 
           <WrapperActivitiesMiddleSize>
             <WrapperLogoTextActivities>
-              <LogoActivities src={LOGO_THIRTY_BLOCK_1} loading='lazy' />
+              <LogoActivities src={LOGO_THIRTY_BLOCK_1} loading="lazy" />
               <TitleLogoActivities>earning</TitleLogoActivities>
             </WrapperLogoTextActivities>
             <WrapperActivitiesCard>
@@ -245,12 +243,12 @@ function App() {
                   </TitleBigCardActivities>
                   <WrappertTextInfoLogo>
                     <TextBigCardActivities>10 points </TextBigCardActivities>
-                    <Vector src={INFO_THIRTY_BLOCK_1} loading='lazy' />
+                    <Vector src={INFO_THIRTY_BLOCK_1} loading="lazy" />
                   </WrappertTextInfoLogo>
                 </WrapperTextBigCardActivities>
                 <WrapperNubmerVectorLogo>
                   <NumberCard>128</NumberCard>
-                  <Vector src={VECTOR_THIRTY_BLOCK_1} loading='lazy' />
+                  <Vector src={VECTOR_THIRTY_BLOCK_1} loading="lazy" />
                 </WrapperNubmerVectorLogo>
               </CardActivities>
               <CardActivities>
@@ -260,12 +258,12 @@ function App() {
                   </TitleBigCardActivities>
                   <WrappertTextInfoLogo>
                     <TextBigCardActivities>10 points </TextBigCardActivities>
-                    <Vector src={INFO_THIRTY_BLOCK_1} loading='lazy' />
+                    <Vector src={INFO_THIRTY_BLOCK_1} loading="lazy" />
                   </WrappertTextInfoLogo>
                 </WrapperTextBigCardActivities>
                 <WrapperNubmerVectorLogo>
                   <NumberCard>86</NumberCard>
-                  <Vector src={VECTOR_THIRTY_BLOCK_1} loading='lazy' />
+                  <Vector src={VECTOR_THIRTY_BLOCK_1} loading="lazy" />
                 </WrapperNubmerVectorLogo>
               </CardActivities>
             </WrapperActivitiesCard>
@@ -277,12 +275,12 @@ function App() {
                   </TitleBigCardActivities>
                   <WrappertTextInfoLogo>
                     <TextBigCardActivities>10 points </TextBigCardActivities>
-                    <Vector src={INFO_THIRTY_BLOCK_1} loading='lazy' />
+                    <Vector src={INFO_THIRTY_BLOCK_1} loading="lazy" />
                   </WrappertTextInfoLogo>
                 </WrapperTextBigCardActivities>
                 <WrapperNubmerVectorLogo>
                   <NumberCard>250</NumberCard>
-                  <Vector src={VECTOR_THIRTY_BLOCK_1} loading='lazy' />
+                  <Vector src={VECTOR_THIRTY_BLOCK_1} loading="lazy" />
                 </WrapperNubmerVectorLogo>
               </CardActivities>
               <CardActivities>
@@ -292,12 +290,12 @@ function App() {
                   </TitleBigCardActivities>
                   <WrappertTextInfoLogo>
                     <TextBigCardActivities>10 points </TextBigCardActivities>
-                    <Vector src={INFO_THIRTY_BLOCK_1} loading='lazy' />
+                    <Vector src={INFO_THIRTY_BLOCK_1} loading="lazy" />
                   </WrappertTextInfoLogo>
                 </WrapperTextBigCardActivities>
                 <WrapperNubmerVectorLogo>
                   <NumberCard>92</NumberCard>
-                  <Vector src={VECTOR_THIRTY_BLOCK_1} loading='lazy' />
+                  <Vector src={VECTOR_THIRTY_BLOCK_1} loading="lazy" />
                 </WrapperNubmerVectorLogo>
               </CardActivities>
             </WrapperActivitiesCard>
@@ -305,7 +303,7 @@ function App() {
         </ThirtyBlock>
 
         <Footer>
-          <LogoFluence src={FOOTER_LOGO} loading='lazy'/>
+          <LogoFluence src={FOOTER_LOGO} loading="lazy" />
           <WrapperTextFooter>
             <TextFooter>Terms of Service</TextFooter>
             <TextFooter> Privacy Policy</TextFooter>
