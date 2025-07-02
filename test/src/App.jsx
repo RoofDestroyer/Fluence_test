@@ -67,7 +67,7 @@ import FOOTER_LOGO from "./assets/footer/logo-2.svg";
 import MAIN_LOGO from "./assets//main/image 1015.svg";
 import BIG_LOGO from "./assets/Frame_1948758739.svg";
 import GIF_NOTIGICATION from "./assets/giphy (5).gif";
-import IMG_BACKGROUND from "./assets/Virtual_machines_CPU_0000_1";
+import IMG_BACKGROUND from "./assets/Virtual_machines_CPU_0000_1.svg";
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
   const activitiesRef = useRef(null);
