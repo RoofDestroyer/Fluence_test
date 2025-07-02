@@ -331,7 +331,6 @@ export const ThirtyBlock = styled.div`
 export const WrapperTitleActivities = styled.div`
   box-sizing: border-box;
   width: 1000px;
-  height: 186px;
 
   @media (max-width: 1000px) {
     width: 345px;
@@ -577,6 +576,21 @@ export const WrappertTextInfoLogo = styled.div`
   gap: 6px;
 `;
 
+export const WrapperTextMiddleCardActivities = styled.div`
+  width: 360px;
+  height: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  @media (max-width: 1000px) {
+    height: auto;
+    width: 315px;
+    max-height: 68px;
+    gap: 8px;
+    justify-content: space-between;
+  }
+`;
+
 export const WrapperNubmerVectorLogo = styled.div`
   width: 64px;
   height: 42px;
@@ -584,9 +598,10 @@ export const WrapperNubmerVectorLogo = styled.div`
   display: flex;
   align-items: center;
   @media (max-width: 1000px) {
+    max-height: 68px;
     flex-direction: column;
     align-items: flex-end;
-    gap: 10px;
+    gap: 0px;
     justify-content: space-between;
     height: auto;
   }

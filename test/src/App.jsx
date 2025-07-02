@@ -45,6 +45,7 @@ import {
   WrapperTextActiveBoostsInfo,
   WrapperTextBigCardActivities,
   WrapperTextFooter,
+  WrapperTextMiddleCardActivities,
   WrapperTitleActivities,
   WrappertTextInfoLogo,
 } from "./styled";
@@ -240,7 +241,7 @@ function App() {
             </WrapperLogoTextActivities>
             <WrapperActivitiesCard>
               <CardActivities>
-                <WrapperTextBigCardActivities>
+                <WrapperTextMiddleCardActivities>
                   <TitleBigCardActivities>
                     hold FLT on Ethereum
                   </TitleBigCardActivities>
@@ -248,14 +249,14 @@ function App() {
                     <TextBigCardActivities>10 points </TextBigCardActivities>
                     <Vector src={INFO_THIRTY_BLOCK_1} loading="lazy" />
                   </WrappertTextInfoLogo>
-                </WrapperTextBigCardActivities>
+                </WrapperTextMiddleCardActivities>
                 <WrapperNubmerVectorLogo>
                   <NumberCard>128</NumberCard>
                   <Vector src={VECTOR_THIRTY_BLOCK_1} loading="lazy" />
                 </WrapperNubmerVectorLogo>
               </CardActivities>
               <CardActivities>
-                <WrapperTextBigCardActivities>
+                <WrapperTextMiddleCardActivities>
                   <TitleBigCardActivities>
                     hold FLT on Fluence
                   </TitleBigCardActivities>
@@ -263,7 +264,7 @@ function App() {
                     <TextBigCardActivities>10 points </TextBigCardActivities>
                     <Vector src={INFO_THIRTY_BLOCK_1} loading="lazy" />
                   </WrappertTextInfoLogo>
-                </WrapperTextBigCardActivities>
+                </WrapperTextMiddleCardActivities>
                 <WrapperNubmerVectorLogo>
                   <NumberCard>86</NumberCard>
                   <Vector src={VECTOR_THIRTY_BLOCK_1} loading="lazy" />
@@ -272,7 +273,7 @@ function App() {
             </WrapperActivitiesCard>
             <WrapperActivitiesCard>
               <CardActivities>
-                <WrapperTextBigCardActivities>
+                <WrapperTextMiddleCardActivities>
                   <TitleBigCardActivities>
                     hold pFLT on Fluence
                   </TitleBigCardActivities>
@@ -280,14 +281,14 @@ function App() {
                     <TextBigCardActivities>10 points </TextBigCardActivities>
                     <Vector src={INFO_THIRTY_BLOCK_1} loading="lazy" />
                   </WrappertTextInfoLogo>
-                </WrapperTextBigCardActivities>
+                </WrapperTextMiddleCardActivities>
                 <WrapperNubmerVectorLogo>
                   <NumberCard>250</NumberCard>
                   <Vector src={VECTOR_THIRTY_BLOCK_1} loading="lazy" />
                 </WrapperNubmerVectorLogo>
               </CardActivities>
               <CardActivities>
-                <WrapperTextBigCardActivities>
+                <WrapperTextMiddleCardActivities>
                   <TitleBigCardActivities>
                     provide liquidity to FLT/WETH pool
                   </TitleBigCardActivities>
@@ -295,7 +296,7 @@ function App() {
                     <TextBigCardActivities>10 points </TextBigCardActivities>
                     <Vector src={INFO_THIRTY_BLOCK_1} loading="lazy" />
                   </WrappertTextInfoLogo>
-                </WrapperTextBigCardActivities>
+                </WrapperTextMiddleCardActivities>
                 <WrapperNubmerVectorLogo>
                   <NumberCard>92</NumberCard>
                   <Vector src={VECTOR_THIRTY_BLOCK_1} loading="lazy" />
