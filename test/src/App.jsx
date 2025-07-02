@@ -77,6 +77,21 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    const img1 = new window.Image();
+    img1.src = LOGO_SECOND_BLOCK_1;
+    const img2 = new window.Image();
+    img2.src = LOGO_SECOND_BLOCK_2;
+    const img3 = new window.Image();
+    img3.src = LOGO_SECOND_BLOCK_3;
+    const img4 = new window.Image();
+    img4.src = LOGO_THIRTY_BLOCK_1;
+    const img5 = new window.Image();
+    img5.src = INFO_THIRTY_BLOCK_1;
+    const img6 = new window.Image();
+    img6.src = MAIN_LOGO;
+  }, []);
+
   const handleScroll = () => {
     if (activitiesRef.current) {
       const activitiesTop = activitiesRef.current.getBoundingClientRect().top;
@@ -218,7 +233,6 @@ function App() {
               <TitleLogoActivities>earning</TitleLogoActivities>
             </WrapperLogoTextActivities>
             <WrapperActivitiesCard>
-
               <CardActivities>
                 <WrapperTextBigCardActivities>
                   <TitleBigCardActivities>
@@ -284,7 +298,7 @@ function App() {
             </WrapperActivitiesCard>
           </WrapperActivitiesMiddleSize>
         </ThirtyBlock>
-        
+
         <Footer>
           <LogoFluence src={FOOTER_LOGO} />
           <WrapperTextFooter>
