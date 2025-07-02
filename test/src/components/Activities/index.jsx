@@ -105,7 +105,7 @@ const Card = ({ text, points, textButton }) => {
         <ImgNotificationBackground visibleNotification={!visibleNotification}>
           <Notification>
             <LeftWrappetNotification>
-              <GifContent src={GIF_NOTIGICATION} loading="lazy" />
+              <GifContent src={GIF_NOTIGICATION} loading="eager" />
             </LeftWrappetNotification>
             <RightWrapperNotification>
               <WrapperCompledetInfo>
@@ -113,7 +113,7 @@ const Card = ({ text, points, textButton }) => {
                 Activity Completed
               </WrapperCompledetInfo>
               <WrapperInfoTextLogo>
-                <LogoNotification src={BIG_LOGO} loading="lazy" />
+                <LogoNotification src={BIG_LOGO} loading="eager" />
                 <TextNotification>You earned {points} points</TextNotification>
               </WrapperInfoTextLogo>
             </RightWrapperNotification>

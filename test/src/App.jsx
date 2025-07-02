@@ -114,7 +114,7 @@ function App() {
       <MainBlock>
         <Nav isVisible={!isScrolled}></Nav>
         <AfterScrollNav isVisible={isScrolled} />
-        <MainLogo src={MAIN_LOGO} loading="lazy" />
+        <MainLogo src={MAIN_LOGO} loading="eager" />
         <FirstBlock>
           <BigTitle>contribute</BigTitle>
           <BigTitle>collect points. repeat.</BigTitle>
