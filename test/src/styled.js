@@ -52,7 +52,7 @@ export const BigTitle = styled.span`
 `;
 
 export const SmallTitle = styled.span`
-  width: 441px;
+  width: 450px;
   height: 28px;
   font-family: Unbounded;
   font-weight: 400;
@@ -421,7 +421,11 @@ export const BigCardActivities = styled.div`
     width: 315px;
     height: 100px;
     padding: 15px;
-    align-items: flex-end;
+    align-items: flex-start;
+    /* justify-content: start; */
+    flex-direction: column;
+
+    background: #30334899;
   }
 `;
 
@@ -434,6 +438,7 @@ export const WrapperTextBigCardActivities = styled.div`
   @media (max-width: 1000px) {
     width: 315px;
     height: auto;
+    display: none;
   }
 `;
 
@@ -449,6 +454,35 @@ export const TitleBigCardActivities = styled.span`
     font-family: Unbounded;
 
     line-height: 140%;
+  }
+`;
+
+export const TitleBigCardActivitiesMeida = styled.span`
+  display: none;
+
+  @media (max-width: 1000px) {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #ffffff;
+    display: block;
+    width: 220px;
+    font-family: Unbounded;
+
+    line-height: 140%;
+  }
+`;
+
+export const WrapperTextSoonMedia = styled.div`
+  display: none;
+  @media (max-width: 1000px) {
+    display: flex;
+    width: 285px;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
   }
 `;
 
@@ -618,7 +652,14 @@ export const NumberCard = styled.div`
   color: #ffffff;
 `;
 
-export const Vector = styled.img``;
+export const Vector = styled.img`
+  @media (max-width: 1000px) {
+    position: relative;
+    bottom: 2px;
+  }
+`;
+
+export const Info = styled.img``;
 
 export const Footer = styled.div`
   box-sizing: border-box;

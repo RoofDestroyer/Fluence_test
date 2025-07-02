@@ -9,6 +9,7 @@ import {
   CardActivities,
   FirstBlock,
   Footer,
+  Info,
   LeftWrapperSecondBlock,
   LogoActiveBosstsInfo,
   LogoActivities,
@@ -32,6 +33,7 @@ import {
   Title,
   TitleActiveBoostsInfo,
   TitleBigCardActivities,
+  TitleBigCardActivitiesMeida,
   TitleLogoActivities,
   TitleSecondBlock,
   Vector,
@@ -46,6 +48,7 @@ import {
   WrapperTextBigCardActivities,
   WrapperTextFooter,
   WrapperTextMiddleCardActivities,
+  WrapperTextSoonMedia,
   WrapperTitleActivities,
   WrappertTextInfoLogo,
 } from "./styled";
@@ -204,7 +207,14 @@ function App() {
                 </TitleBigCardActivities>
                 <TextBigCardActivities>100 points</TextBigCardActivities>
               </WrapperTextBigCardActivities>
-              <SoonMediaBigCardActivities>Soon</SoonMediaBigCardActivities>
+              <TitleBigCardActivitiesMeida>
+                stay tuned for our new Pointless activities!
+              </TitleBigCardActivitiesMeida>
+              <WrapperTextSoonMedia>
+                <TextBigCardActivities>100 points</TextBigCardActivities>
+                <SoonMediaBigCardActivities>Soon</SoonMediaBigCardActivities>
+              </WrapperTextSoonMedia>
+
               <SoonBigCardActivities>Coming soon</SoonBigCardActivities>
             </BigCardActivities>
           </WrapperActivities>
@@ -247,7 +257,7 @@ function App() {
                   </TitleBigCardActivities>
                   <WrappertTextInfoLogo>
                     <TextBigCardActivities>10 points </TextBigCardActivities>
-                    <Vector src={INFO_THIRTY_BLOCK_1} loading="lazy" />
+                    <Info src={INFO_THIRTY_BLOCK_1} loading="lazy" />
                   </WrappertTextInfoLogo>
                 </WrapperTextMiddleCardActivities>
                 <WrapperNubmerVectorLogo>
@@ -262,7 +272,7 @@ function App() {
                   </TitleBigCardActivities>
                   <WrappertTextInfoLogo>
                     <TextBigCardActivities>10 points </TextBigCardActivities>
-                    <Vector src={INFO_THIRTY_BLOCK_1} loading="lazy" />
+                    <Info src={INFO_THIRTY_BLOCK_1} loading="lazy" />
                   </WrappertTextInfoLogo>
                 </WrapperTextMiddleCardActivities>
                 <WrapperNubmerVectorLogo>
@@ -279,7 +289,7 @@ function App() {
                   </TitleBigCardActivities>
                   <WrappertTextInfoLogo>
                     <TextBigCardActivities>10 points </TextBigCardActivities>
-                    <Vector src={INFO_THIRTY_BLOCK_1} loading="lazy" />
+                    <Info src={INFO_THIRTY_BLOCK_1} loading="lazy" />
                   </WrappertTextInfoLogo>
                 </WrapperTextMiddleCardActivities>
                 <WrapperNubmerVectorLogo>
@@ -294,7 +304,7 @@ function App() {
                   </TitleBigCardActivities>
                   <WrappertTextInfoLogo>
                     <TextBigCardActivities>10 points </TextBigCardActivities>
-                    <Vector src={INFO_THIRTY_BLOCK_1} loading="lazy" />
+                    <Info src={INFO_THIRTY_BLOCK_1} loading="lazy" />
                   </WrappertTextInfoLogo>
                 </WrapperTextMiddleCardActivities>
                 <WrapperNubmerVectorLogo>
