@@ -25,8 +25,8 @@ import testImg from "../../assets/timer.json";
 import VECTOR from "../../assets/Vector 6776.svg";
 import CurrencyContext from "../../CurrencyContext";
 import BIG_LOGO from "../../assets/Frame_1948758739.svg";
-import GIF_NOTIGICATION from "../../assets/giphy5-ezgif.com-cut.gif";
-import IMG_BACKGROUND from "../../assets/Virtual machines CPU_0000 1.svg";
+import GIF_NOTIGICATION from "../../assets/giphy5-ezgif.com-cut-2.gif";
+import IMG_BACKGROUND from "../../assets/Virtual_machines_CPU_0000_1.svg";
 
 const Card = ({ text, points, textButton }) => {
   const [isRunning, setIsRunning] = useState(false);
