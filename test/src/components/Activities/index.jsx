@@ -35,17 +35,17 @@ const Card = ({ text, points, textButton }) => {
   const [showNotification, setShowNotification] = useState(false);
   const [visibleNotification, setVisibleNotification] = useState(false);
 
-  useEffect(() => {
-    const preloadImages = () => {
-      const images = [BIG_LOGO, GIF_NOTIGICATION, IMG_BACKGROUND];
-      images.forEach((src) => {
-        const img = new Image();
-        img.src = src;
-      });
-    };
+  // useEffect(() => {
+  //   const preloadImages = () => {
+  //     const images = [BIG_LOGO, GIF_NOTIGICATION, IMG_BACKGROUND];
+  //     images.forEach((src) => {
+  //       const img = new Image();
+  //       img.src = src;
+  //     });
+  //   };
 
-    preloadImages();
-  }, []);
+  //   preloadImages();
+  // }, []);
 
   const handleStart = () => {
     setIsRunning(true);
@@ -101,25 +101,25 @@ const Card = ({ text, points, textButton }) => {
         </CompletedBlock>
       )}
 
-      {showNotification && (
-        <ImgNotificationBackground visibleNotification={!visibleNotification}>
-          <Notification>
-            <LeftWrappetNotification>
-              <GifContent src={GIF_NOTIGICATION} loading="eager" />
-            </LeftWrappetNotification>
-            <RightWrapperNotification>
-              <WrapperCompledetInfo>
-                <Vector src={VECTOR} />
-                Activity Completed
-              </WrapperCompledetInfo>
-              <WrapperInfoTextLogo>
-                <LogoNotification src={BIG_LOGO} loading="eager" />
-                <TextNotification>You earned {points} points</TextNotification>
-              </WrapperInfoTextLogo>
-            </RightWrapperNotification>
-          </Notification>
-        </ImgNotificationBackground>
-      )}
+      {/* {showNotification && ( */}
+      <ImgNotificationBackground visibleNotification={!visibleNotification}>
+        <Notification>
+          <LeftWrappetNotification>
+            <GifContent src={GIF_NOTIGICATION} loading="lazy" />
+          </LeftWrappetNotification>
+          <RightWrapperNotification>
+            <WrapperCompledetInfo>
+              <Vector src={VECTOR} />
+              Activity Completed
+            </WrapperCompledetInfo>
+            <WrapperInfoTextLogo>
+              <LogoNotification src={BIG_LOGO} loading="lazy" />
+              <TextNotification>You earned {points} points</TextNotification>
+            </WrapperInfoTextLogo>
+          </RightWrapperNotification>
+        </Notification>
+      </ImgNotificationBackground>
+      {/* )} */}
     </Container>
   );
 };
