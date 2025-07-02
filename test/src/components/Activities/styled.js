@@ -278,7 +278,7 @@ export const ImgNotificationBackground = styled.div`
 export const LeftWrappetNotification = styled.div`
   position: relative;
   bottom: 35px;
-  right: 5px;
+  right: 15px;
   width: 120px;
   height: 180px;
   overflow: hidden;
@@ -287,6 +287,9 @@ export const LeftWrappetNotification = styled.div`
   align-items: center;
   transform: rotate(345deg);
   border-radius: 15px;
+  @media (max-width: 1000px) {
+    right: 0px;
+  }
 `;
 
 export const GifContent = styled.img`
