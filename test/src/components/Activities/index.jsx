@@ -24,7 +24,7 @@ import Lottie from "lottie-react";
 import testImg from "../../assets/timer.json";
 import VECTOR from "../../assets/Vector 6776.svg";
 import CurrencyContext from "../../CurrencyContext";
-import BIG_LOGO from "../../assets/Frame 1948758739.svg";
+import BIG_LOGO from "../../assets/Frame_1948758739.svg";
 import GIF_NOTIGICATION from "../../assets/giphy (5).gif";
 import IMG_BACKGROUND from "../../assets/Virtual machines CPU_0000 1.svg";
 
@@ -115,7 +115,7 @@ const Card = ({ text, points, textButton }) => {
             </LeftWrappetNotification>
             <RightWrapperNotification>
               <WrapperCompledetInfo>
-                <Vector src={VECTOR} loading="lazy" />
+                <Vector src={VECTOR} />
                 Activity Completed
               </WrapperCompledetInfo>
               <WrapperInfoTextLogo>

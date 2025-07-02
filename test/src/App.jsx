@@ -65,7 +65,7 @@ import INFO_THIRTY_BLOCK_1 from "./assets/thirtyBlock/info.svg";
 import VECTOR_THIRTY_BLOCK_1 from "./assets/thirtyBlock/Vector 6926.svg";
 import FOOTER_LOGO from "./assets/footer/logo-2.svg";
 import MAIN_LOGO from "./assets//main/image 1015.svg";
-import BIG_LOGO from "./assets/Frame 1948758739.svg";
+import BIG_LOGO from "./assets/Frame_1948758739.svg";
 import GIF_NOTIGICATION from "./assets/giphy (5).gif";
 import IMG_BACKGROUND from "./assets/Virtual machines CPU_0000 1.svg";
 function App() {
