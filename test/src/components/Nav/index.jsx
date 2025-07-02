@@ -22,7 +22,7 @@ export const Nav = ({ isVisible }) => {
     <>
       <Container visible={isVisible}>
         <Wrapper>
-          <Logo src={LogoImage} />
+          <Logo src={LogoImage} loading="lazy" />
           <WrapperText>
             <Text>Home</Text>
             <Text>Referrals</Text>

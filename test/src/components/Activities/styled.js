@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import IMG_BACKGROUND from "../../assets/Virtual machines CPU_0000 1.svg";
+import IMG_BACKGROUND from "../../assets/Virtual_machines_CPU_0000_1.svg";
 // Определяем анимацию
 const zoomInOut = keyframes`
   0% {
