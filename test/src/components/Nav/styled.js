@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   box-sizing: border-box;
-  position: fixed;
+  position: relative;
   width: 1440px;
   height: 70px;
   display: flex;
+  z-index: 100;
   justify-content: center;
   background: transparent;
   align-items: center;

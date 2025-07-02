@@ -10,7 +10,7 @@ export const MainBlock = styled.div`
 export const FirstBlock = styled.div`
   width: 1000px;
   height: 188px;
-  margin-top: 160px;
+  margin-top: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
