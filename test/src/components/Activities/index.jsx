@@ -44,14 +44,14 @@ const Card = ({ text, points, textButton }) => {
   //   imgBgLogo.src = BIG_LOGO;
   // }, []);
 
-  useEffect(() => {
-    const preloadImages = [GIF_NOTIGICATION, IMG_BACKGROUND, BIG_LOGO];
+  // useEffect(() => {
+  //   const preloadImages = [GIF_NOTIGICATION, IMG_BACKGROUND, BIG_LOGO];
 
-    preloadImages.forEach((src) => {
-      const img = new Image();
-      img.src = src;
-    });
-  }, []);
+  //   preloadImages.forEach((src) => {
+  //     const img = new Image();
+  //     img.src = src;
+  //   });
+  // }, []);
 
   const handleStart = () => {
     setIsRunning(true);
