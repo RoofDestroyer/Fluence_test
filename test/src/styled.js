@@ -1,5 +1,12 @@
 import styled, { css } from "styled-components";
 
+export const MainBlock = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 export const FirstBlock = styled.div`
   width: 1000px;
   height: 188px;
@@ -18,7 +25,7 @@ export const FirstBlock = styled.div`
 export const MainLogo = styled.img`
   position: absolute;
   z-index: -1;
-  width: 100vw;
+  width: 100%;
   top: 100px;
 `;
 
@@ -183,6 +190,9 @@ export const TextInfoStats = styled.span`
   vertical-align: middle;
   text-transform: uppercase;
   color: #636a95;
+  @media (max-width: 1000px) {
+    width: 170px;
+  }
 `;
 
 export const NumberInfoStats = styled.span`
@@ -300,13 +310,14 @@ export const NumberActiveBoostsInfo = styled.span`
 `;
 
 export const ThirtyBlock = styled.div`
+  box-sizing: border-box;
   width: 1000px;
   height: 975px;
 
   margin-top: 45px;
 
   @media (max-width: 1000px) {
-    width: 375px;
+    width: 100%;
     height: 1196px;
     /* gap: 20px; */
     padding-right: 15px;
@@ -592,7 +603,7 @@ export const Footer = styled.div`
   margin-bottom: 36px;
   margin-top: 50px;
   @media (max-width: 1000px) {
-    width: 345px;
+    width: 375px;
     height: 144px;
     justify-content: space-between;
     align-items: flex-end;
@@ -601,7 +612,8 @@ export const Footer = styled.div`
     margin-bottom: 30px;
     margin-top: 40px;
     padding-top: 40px;
-
+    padding-left: 15px;
+    padding-right: 15px;
   }
 `;
 

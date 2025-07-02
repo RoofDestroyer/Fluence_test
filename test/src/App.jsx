@@ -13,6 +13,7 @@ import {
   LogoActiveBosstsInfo,
   LogoActivities,
   LogoFluence,
+  MainBlock,
   MainLogo,
   NumberActiveBoostsInfo,
   NumberCard,
@@ -110,14 +111,7 @@ function App() {
 
   return (
     <CurrencyProvider>
-      <div
-        style={{
-          width: "100%",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
+      <MainBlock>
         <Nav isVisible={!isScrolled}></Nav>
         <AfterScrollNav isVisible={isScrolled} />
         <MainLogo src={MAIN_LOGO} />
@@ -307,7 +301,7 @@ function App() {
           </WrapperTextFooter>
           <TextFooter>© 2025 Fluence</TextFooter>
         </Footer>
-      </div>
+      </MainBlock>
     </CurrencyProvider>
   );
 }

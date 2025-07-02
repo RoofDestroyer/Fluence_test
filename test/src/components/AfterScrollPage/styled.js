@@ -22,6 +22,7 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
+  box-sizing: border-box;
   width: 1000px;
   height: 50px;
   display: flex;

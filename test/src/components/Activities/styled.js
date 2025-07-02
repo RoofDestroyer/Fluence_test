@@ -248,6 +248,10 @@ export const Notification = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  @media (max-width: 1000px) {
+    width: 335px;
+    height: 142px;
+  }
 `;
 
 export const ImgNotificationBackground = styled.div`
@@ -264,6 +268,11 @@ export const ImgNotificationBackground = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 1000px) {
+    width: 345px;
+    right: 10px;
+    bottom: 20px;
+  }
 `;
 
 export const LeftWrappetNotification = styled.div`
@@ -319,6 +328,17 @@ export const WrapperCompledetInfo = styled.div`
   text-transform: uppercase;
 
   color: #aafe97;
+  @media (max-width: 1000px) {
+    width: 176px;
+    height: 30px;
+
+    font-family: Unbounded;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-transform: uppercase;
+  }
 `;
 
 export const WrapperInfoTextLogo = styled.div`
@@ -340,4 +360,11 @@ export const TextNotification = styled.span`
   line-height: 100%;
   letter-spacing: 0%;
   color: #ffffff;
+  @media (max-width: 1000px) {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0%;
+  }
 `;
